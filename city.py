@@ -21,7 +21,7 @@ class YahooWeatherForecast:
         forecast_data = data["query"]["results"]["channel"]["item"]["forecast"]
         forecast = []
         for day_data in forecast_data:
-            # выбираем из словаря forecast_data необходимые данные и лодим их в словарь forecast
+            # выбираем из словаря forecast_data необходимые данные и ложим их в словарь forecast
             forecast.append({"date": parse(day_data["date"]), 
             "high_temp": day_data["high"]
             })
